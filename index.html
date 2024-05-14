@@ -14,7 +14,9 @@
             color: #000;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
+
 
         .container {
             max-width: 1140px;
@@ -136,7 +138,7 @@
             }
         }
 
-        h3 {
+        .Beseitige_heading {
             margin: 0;
             font-family: Montserrat;
             font-weight: 800;
@@ -148,28 +150,27 @@
 
 
 
-        h3 span:nth-child(even) {
+        .Beseitige_heading span:nth-child(even) {
             color: black;
 
         }
 
-        h3 span:nth-child(odd) {
+        .Beseitige_heading span:nth-child(odd) {
             color: rgb(98, 176, 247);
 
         }
 
 
-        p {
+
+        .Jahrelange_text {
+            margin: 60px 0px 0;
             line-height: 28.5px;
             color: rgba(0, 0, 0, .95);
             font-weight: 400;
             font-size: 17px;
             text-align: center;
             font-family: Montserrat;
-        }
 
-        .Jahrelange_text {
-            margin: 60px 0px 0;
         }
 
 
@@ -180,6 +181,12 @@
 
         .Unsere_text {
             margin: 20px 130px 0;
+            line-height: 28.5px;
+            color: rgba(0, 0, 0, .95);
+            font-weight: 400;
+            font-size: 17px;
+            text-align: center;
+            font-family: Montserrat;
 
         }
 
@@ -209,13 +216,33 @@
         }
 
         @media (max-width: 600px) {
-            h1 {
-                font-size: 1.5em;
+            .Beseitige_heading {
+                margin: 0;
+                font-size: 24px;
+                text-align: left;
+                line-height: 34px;
             }
 
-            p {
-                font-size: 0.9em;
+
+            .Jahrelange_text {
+                margin: 25px 0 0;
+                font-size: 16px;
+                text-align: left;
+                line-height: 32px;
+
+
+
             }
+
+            .Unsere_text {
+                margin: 20px 0px 0;
+                font-size: 16px;
+                text-align: left;
+                line-height: 32px;
+
+
+            }
+
         }
     </style>
 </head>
@@ -224,7 +251,7 @@
     <div class="container">
         <div class="row">
             <div class="col col-12">
-                <h3>Beseitige
+                <h3 class="Beseitige_heading">Beseitige
                     <span class="">schmerzende & <br>angeschwollene</span>
                     <span>Beine und Füße in </span>
                     <span>weniger als 14 Tagen!</span>
